@@ -1,68 +1,176 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jesli Priya | CS Student</title>
+    <title>Jesli Priya | Computer Science Student</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Dark Mode Toggle -->
-    <button id="theme-toggle" class="theme-toggle">🌓</button>
-
-    <!-- Header -->
     <header>
-        <nav>
-            <a href="index.html" class="logo">Jesli Priya</a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="achievements.html">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <div class="logo">Jesli Priya</div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="slider round"></div>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="animate">Hi, I'm <span>Jesli Priya</span></h1>
-            <p class="animate">B.Sc Computer Science Student | Full-Stack Enthusiast</p>
-            <a href="projects.html" class="btn animate">View My Work</a>
-        </div>
-        <div class="hero-image animate">
-            <img src="assets/profile.jpg" alt="Jesli Priya">
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-grid">
-            <div class="about-text">
-                <p>I'm a passionate Computer Science student at KG College of Arts and Science, Coimbatore, with a strong drive for full-stack development. I love building smart, user-friendly web apps and am currently leveling up my Java and React skills.</p>
-                <div class="skills">
-                    <h3>Technical Skills</h3>
-                    <div class="skill-bar" data-skill="Python">Python</div>
-                    <div class="skill-bar" data-skill="Java">Java</div>
-                    <div class="skill-bar" data-skill="HTML/CSS">HTML/CSS</div>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="animate-text">Hi, I'm <span>Jesli Priya</span></h1>
+                        <h2 class="animate-text">Computer Science Student</h2>
+                        <p class="animate-text">I'm a passionate Computer Science student with a strong drive for full-stack development. I love building smart, user-friendly web apps and am currently leveling up my Java and React skills.</p>
+                        <div class="hero-buttons animate-text">
+                            <a href="projects.html" class="btn btn-primary">View My Work</a>
+                            <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+                        </div>
+                    </div>
+                    <div class="hero-image animate-image">
+                        <img src="assets/profile.jpg" alt="Jesli Priya">
+                    </div>
                 </div>
             </div>
-            <div class="education">
-                <h3>Education</h3>
-                <p><strong>KG College of Arts and Science</strong></p>
-                <p>B.Sc Computer Science (2023-2027)</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm currently pursuing my Bachelor's degree in Computer Science at KG College of Arts and Science, with an expected graduation in 2027.</p>
+                        <p>My technical skills include Python, Java, C#, C, C++, HTML, and CSS. Beyond coding, I'm a strong team player and have demonstrated leadership skills in various academic projects.</p>
+                        <p>When I'm not studying or coding, you can find me participating in hackathons (I've won "Most Innovative" in one!) or expanding my knowledge through online courses.</p>
+                    </div>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <h3>Name:</h3>
+                            <p>Jesli Priya</p>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Location:</h3>
+                            <p>Ganapathy, Coimbatore</p>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Education:</h3>
+                            <p>B.Sc Computer Science</p>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Graduation:</h3>
+                            <p>2027</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress python"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Java</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress java"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>C#</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress csharp"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML/CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress htmlcss"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>C/C++</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress cpp"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2024 Jesli Priya</p>
-        <div class="social-links">
-            <a href="https://github.com/jeslipriya" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/jesli-priya-k-2205j07" target="_blank">LinkedIn</a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Jesli Priya</h3>
+                    <p>Computer Science student passionate about full-stack development and creating innovative solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Connect With Me</h3>
+                    <ul>
+                        <li><a href="https://github.com/jeslipriya" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/jesli-priya-k-2205j07" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="mailto:jesli@example.com"><i class="fas fa-envelope"></i> jesli@example.com</a></li>
+                        <li><a href="tel:+918527537412"><i class="fas fa-phone"></i> +91 8527537412</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Jesli Priya. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
