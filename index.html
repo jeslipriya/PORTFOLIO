@@ -1,43 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Portfolio</title>
+    <title>Jesli Priya | CS Student</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <aside class="sider">
-        <div>
-            <h5>Profile</h5>
-            <img src="images/profile.png" alt="profile image" width="200">
-            <p>Full Stack Developer</p>
-        </div>
-        <hr>
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle" class="theme-toggle">🌓</button>
 
-        <div>
-            <h4>Information</h4>
-            <p><strong>Email Id</strong></p>
-            <a href="mailto:jealipriya07@gmaol.com">jeslipriya07@gmail.com</a>
-            <p><strong>Phone Number</strong></p>
-            <a href="tel:8015677176">80156 77176</a>
-            <p><strong>Location</strong></p>
-            <p>Ganapathy, Coimbatore - 641 006</p>
-        </div>
-    </aside>
-
-    <nav>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Jesli Priya</a>
             <ul>
-                <li>About</li>
-                <li>Certifications</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+    </header>
 
-    <main>
-        <h3>About Me</h3>
-        <p>I am Jesli Priya. Persuing B.Sc. Computer Science II Year in KG College of Arts and Science</p>    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="animate">Hi, I'm <span>Jesli Priya</span></h1>
+            <p class="animate">B.Sc Computer Science Student | Full-Stack Enthusiast</p>
+            <a href="projects.html" class="btn animate">View My Work</a>
+        </div>
+        <div class="hero-image animate">
+            <img src="assets/profile.jpg" alt="Jesli Priya">
+        </div>
+    </section>
 
-    </main>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>I'm a passionate Computer Science student at KG College of Arts and Science, Coimbatore, with a strong drive for full-stack development. I love building smart, user-friendly web apps and am currently leveling up my Java and React skills.</p>
+                <div class="skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-bar" data-skill="Python">Python</div>
+                    <div class="skill-bar" data-skill="Java">Java</div>
+                    <div class="skill-bar" data-skill="HTML/CSS">HTML/CSS</div>
+                </div>
+            </div>
+            <div class="education">
+                <h3>Education</h3>
+                <p><strong>KG College of Arts and Science</strong></p>
+                <p>B.Sc Computer Science (2023-2027)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Jesli Priya</p>
+        <div class="social-links">
+            <a href="https://github.com/jeslipriya" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/jesli-priya-k-2205j07" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
