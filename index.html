@@ -6,34 +6,30 @@
     <title>Jesli Priya | Computer Science Student</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dark-mode.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
+            <div class="logo">Jesli<span>Priya</span></div>
             <nav>
-                <div class="logo">Jesli Priya</div>
-                <ul class="nav-links">
+                <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="achievements.html">Achievements</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li>
-                        <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="slider round"></div>
-                            </label>
-                        </div>
-                    </li>
                 </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
             </nav>
+            <div class="dark-mode-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
     </header>
 
@@ -41,18 +37,16 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="animate-text">Hi, I'm <span>Jesli Priya</span></h1>
-                        <h2 class="animate-text">Computer Science Student</h2>
-                        <p class="animate-text">I'm a passionate Computer Science student with a strong drive for full-stack development. I love building smart, user-friendly web apps and am currently leveling up my Java and React skills.</p>
-                        <div class="hero-buttons animate-text">
-                            <a href="projects.html" class="btn btn-primary">View My Work</a>
-                            <a href="contact.html" class="btn btn-secondary">Contact Me</a>
-                        </div>
+                    <h1 class="animate-slide-in">Hi, I'm <span>Jesli Priya</span></h1>
+                    <h2 class="animate-slide-in">B.Sc Computer Science Student</h2>
+                    <p class="animate-slide-in">I'm a passionate Computer Science student with a strong drive for full-stack development. I love building smart, user-friendly web apps and am currently leveling up my Java and React skills.</p>
+                    <div class="hero-buttons animate-slide-in">
+                        <a href="projects.html" class="btn btn-primary">View My Work</a>
+                        <a href="contact.html" class="btn btn-secondary">Contact Me</a>
                     </div>
-                    <div class="hero-image animate-image">
-                        <img src="assets/profile.jpg" alt="Jesli Priya">
-                    </div>
+                </div>
+                <div class="hero-image animate-fade-in">
+                    <img src="assets/profile.jpg" alt="Jesli Priya">
                 </div>
             </div>
         </section>
@@ -63,80 +57,81 @@
                 <div class="about-content">
                     <div class="about-text">
                         <p>I'm currently pursuing my Bachelor's degree in Computer Science at KG College of Arts and Science, with an expected graduation in 2027.</p>
-                        <p>My technical skills include Python, Java, C#, C, C++, HTML, and CSS. Beyond coding, I'm a strong team player and have demonstrated leadership skills in various academic projects.</p>
-                        <p>When I'm not studying or coding, you can find me participating in hackathons (I've won "Most Innovative" in one!) or expanding my knowledge through online courses.</p>
+                        <p>My journey in technology began with a curiosity about how things work, which has evolved into a passion for creating solutions through code.</p>
+                        <p>When I'm not coding, you can find me participating in hackathons, learning new technologies, or contributing to open-source projects.</p>
                     </div>
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <h3>Name:</h3>
-                            <p>Jesli Priya</p>
-                        </div>
-                        <div class="detail-item">
-                            <h3>Location:</h3>
-                            <p>Ganapathy, Coimbatore</p>
-                        </div>
-                        <div class="detail-item">
-                            <h3>Education:</h3>
-                            <p>B.Sc Computer Science</p>
-                        </div>
-                        <div class="detail-item">
-                            <h3>Graduation:</h3>
-                            <p>2027</p>
+                    <div class="about-skills">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code"></i>
+                                <span>C/C++</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>SQL</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="skills">
+        <section class="education">
             <div class="container">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="skills-container">
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Python</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress python"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Java</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress java"></div>
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item animate-fade-in">
+                        <div class="timeline-date">2025 - 2027</div>
+                        <div class="timeline-content">
+                            <h3>B.Sc Computer Science</h3>
+                            <h4>KG College of Arts and Science</h4>
+                            <p>Currently in my II year with a focus on software development, algorithms, and database systems.</p>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>C#</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress csharp"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>HTML/CSS</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress htmlcss"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>C/C++</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress cpp"></div>
-                        </div>
-                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-links">
+            <div class="container">
+                <h2 class="section-title">Explore More</h2>
+                <div class="links-grid">
+                    <a href="projects.html" class="link-card animate-slide-up">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Projects</h3>
+                        <p>View my portfolio of completed projects</p>
+                    </a>
+                    <a href="achievements.html" class="link-card animate-slide-up">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Achievements</h3>
+                        <p>See my certifications and awards</p>
+                    </a>
+                    <a href="contact.html" class="link-card animate-slide-up">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Contact</h3>
+                        <p>Get in touch with me</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -147,7 +142,7 @@
             <div class="footer-content">
                 <div class="footer-about">
                     <h3>Jesli Priya</h3>
-                    <p>Computer Science student passionate about full-stack development and creating innovative solutions.</p>
+                    <p>B.Sc Computer Science student passionate about full-stack development and creating innovative solutions.</p>
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
@@ -159,7 +154,7 @@
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h3>Connect With Me</h3>
+                    <h3>Connect</h3>
                     <ul>
                         <li><a href="https://github.com/jeslipriya" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
                         <li><a href="https://www.linkedin.com/in/jesli-priya-k-2205j07" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
