@@ -3,131 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achievements | Jesli Priya</title>
+    <title>Contact | Jesli Priya</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dark-mode.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
+            <div class="logo">Jesli<span>Priya</span></div>
             <nav>
-                <div class="logo">Jesli Priya</div>
-                <ul class="nav-links">
+                <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="achievements.html" class="active">Achievements</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li>
-                        <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="slider round"></div>
-                            </label>
-                        </div>
-                    </li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
             </nav>
+            <div class="dark-mode-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="achievements-hero">
+        <section class="contact-hero">
             <div class="container">
-                <h1 class="animate-text">My Achievements</h1>
-                <p class="animate-text">Certifications, awards, and recognitions I've earned throughout my academic journey.</p>
+                <h1 class="animate-slide-in">Get In <span>Touch</span></h1>
+                <p class="animate-slide-in">Feel free to reach out for collaborations, opportunities, or just a friendly hello!</p>
             </div>
         </section>
 
-        <section class="achievements-timeline">
+        <section class="contact-section">
             <div class="container">
-                <h2 class="section-title">Academic & Professional Milestones</h2>
-                
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Scholarship Award</h3>
-                            <span class="date">2023</span>
-                            <p>Received academic scholarship for outstanding performance in Computer Science studies.</p>
+                <div class="contact-grid">
+                    <div class="contact-info animate-slide-up">
+                        <h2>Contact Information</h2>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Ganapathy, Coimbatore, Tamil Nadu</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>jesli@example.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+91 8527537412</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/jeslipriya" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/jesli-priya-k-2205j07" target="_blank"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Hackathon Winner - "Most Innovative"</h3>
-                            <span class="date">2022</span>
-                            <p>Awarded "Most Innovative" prize in college hackathon for developing a unique solution to campus parking issues.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Project Expo Participant</h3>
-                            <span class="date">2022</span>
-                            <p>Participated in college project expo showcasing a web-based library management system.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Coursera Certification</h3>
-                            <span class="date">2021</span>
-                            <p>Completed "Introduction to Python Programming" course on Coursera.</p>
-                        </div>
+
+                    <div class="contact-form animate-slide-up">
+                        <h2>Send Me a Message</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required>
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="certifications">
+        <section class="map-section">
             <div class="container">
-                <h2 class="section-title">Certifications</h2>
-                <div class="certifications-grid">
-                    <div class="certificate-card">
-                        <div class="certificate-image">
-                            <img src="assets/certs/cert1.jpg" alt="Python Certification">
-                        </div>
-                        <div class="certificate-info">
-                            <h3>Python Programming</h3>
-                            <p>Coursera - 2021</p>
-                        </div>
-                    </div>
-                    
-                    <div class="certificate-card">
-                        <div class="certificate-image">
-                            <img src="assets/certs/cert2.jpg" alt="Web Development Certification">
-                        </div>
-                        <div class="certificate-info">
-                            <h3>Web Development Fundamentals</h3>
-                            <p>College Workshop - 2022</p>
-                        </div>
-                    </div>
-                    
-                    <div class="certificate-card">
-                        <div class="certificate-image">
-                            <img src="assets/certs/cert3.jpg" alt="Java Certification">
-                        </div>
-                        <div class="certificate-info">
-                            <h3>Java Programming</h3>
-                            <p>Online Course - 2022</p>
-                        </div>
-                    </div>
-                    
-                    <div class="certificate-card">
-                        <div class="certificate-image">
-                            <img src="assets/certs/cert4.jpg" alt="Hackathon Winner">
-                        </div>
-                        <div class="certificate-info">
-                            <h3>Hackathon Winner</h3>
-                            <p>Most Innovative Award - 2022</p>
-                        </div>
-                    </div>
+                <h2 class="section-title">Find Me</h2>
+                <div class="map-container animate-fade-in">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15665.46493347029!2d76.9845!3d11.0186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8582e0f8a0e0d%3A0x3a6d5f3d5a6d5f3d!2sGanapathy%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </section>
@@ -138,7 +114,7 @@
             <div class="footer-content">
                 <div class="footer-about">
                     <h3>Jesli Priya</h3>
-                    <p>Computer Science student passionate about full-stack development and creating innovative solutions.</p>
+                    <p>B.Sc Computer Science student passionate about full-stack development and creating innovative solutions.</p>
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
@@ -150,7 +126,7 @@
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h3>Connect With Me</h3>
+                    <h3>Connect</h3>
                     <ul>
                         <li><a href="https://github.com/jeslipriya" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
                         <li><a href="https://www.linkedin.com/in/jesli-priya-k-2205j07" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
