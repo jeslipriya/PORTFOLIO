@@ -154,6 +154,7 @@ body.dark-mode .dark-mode-toggle::after {
 }
 
 a.btn:hover {
+    /* color: #FF5722; */
   color: #01565b;
   background-color: #00f0fcb8; /* Replace this with your fav hover color */
 }
