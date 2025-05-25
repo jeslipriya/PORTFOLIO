@@ -153,6 +153,11 @@ body.dark-mode .dark-mode-toggle::after {
     content: "🌙";
 }
 
+a.btn:hover {
+  color: #01565b;
+  background-color: #00f0fcb8; /* Replace this with your fav hover color */
+}
+
 /* Form inputs dark mode styling */
 select {
     background-color: var(--card-bg);
