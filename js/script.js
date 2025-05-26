@@ -1,25 +1,40 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Dark mode toggle
+    // ===== Dark Mode Toggle =====
     const darkModeToggle = document.querySelector('.dark-mode-toggle');
     const body = document.body;
-    
-    // Check for saved user preference
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        body.classList.add('dark-mode');
+    const moonIcon = darkModeToggle.querySelector('.fa-moon');
+    const sunIcon = darkModeToggle.querySelector('.fa-sun');
+
+    // Initialize theme
+    function initTheme() {
+        const savedTheme = localStorage.getItem('darkMode');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        // Apply dark mode if enabled in storage or if no preference and system prefers dark
+        if (savedTheme === 'enabled' || (savedTheme === null && systemPrefersDark)) {
+            body.classList.add('dark-mode');
+        }
+        updateIcons();
     }
-    
+
+    // Update toggle icons visibility
+    function updateIcons() {
+        const isDark = body.classList.contains('dark-mode');
+        moonIcon.style.display = isDark ? 'none' : 'inline-block';
+        sunIcon.style.display = isDark ? 'inline-block' : 'none';
+    }
+
+    // Toggle theme on button click
     darkModeToggle.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
-        
-        // Save user preference
-        if (body.classList.contains('dark-mode')) {
-            localStorage.setItem('darkMode', 'enabled');
-        } else {
-            localStorage.setItem('darkMode', 'disabled');
-        }
+        localStorage.setItem('darkMode', body.classList.contains('dark-mode') ? 'enabled' : 'disabled');
+        updateIcons();
     });
-    
-    // Mobile menu toggle
+
+    // Initialize theme on page load
+    initTheme();
+
+    // ===== Mobile Menu Toggle =====
     const hamburger = document.querySelector('.hamburger');
     const nav = document.querySelector('nav');
     
@@ -37,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Animate elements when they come into view
+    // ===== Scroll Animations =====
     const animateOnScroll = () => {
         const elements = document.querySelectorAll('.animate-slide-in, .animate-slide-up, .animate-fade-in');
         
@@ -57,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Run on scroll
     window.addEventListener('scroll', animateOnScroll);
     
-    // Tab functionality for achievements page
+    // ===== Tab Functionality =====
     const tabBtns = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
     
@@ -77,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Form submission
+    // ===== Form Submission =====
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
