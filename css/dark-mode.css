@@ -68,6 +68,10 @@ nav ul li a:hover {
     background-color: var(--highlight-color);
 }
 
+.hackathon-item:hover{
+    background-color: #393E46;
+}
+
 .project-tech span {
     background-color: var(--highlight-color);
     color: var(--primary-color);
