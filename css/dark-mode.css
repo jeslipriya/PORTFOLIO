@@ -117,6 +117,7 @@ footer {
 
 .footer-links a:hover, .footer-contact a:hover {
     color: var(--text-color);
+    background-color: #1E1E1E;
 }
 
 /* Timeline adjustments for dark mode */
